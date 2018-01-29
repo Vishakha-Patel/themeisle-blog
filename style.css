@@ -9,3 +9,10 @@ License URI:    http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:    zillah-ti-blog
 Template:       zillah
 */
+
+/* Make the image width same as the content width */
+.blog .post-thumbnail-wrap {
+    max-width: 840px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
+}
