@@ -26,9 +26,42 @@ body {
 
 /* Single Post Page */
 
+/* Change bakcground-color to white */
+.single-post .site-content {
+    color: #333333;
+    background-color: #ffffff;
+}
+
+/* Change container for content width to 770px */
+@media screen and (min-width: 992px ) {
+    .single-post .content-inner-wrap {
+       max-width: 770px;
+    }
+}
+
 /* Make the feature image smaller, similar to content in width  */
 .single-post  .post-thumbnail-wrap {
-    max-width: 740px;
+    max-width: 770px;
     margin: 0 auto 50px;
     padding: 0 20px;
+}
+
+/* Change post title line-height */
+.single-post h1.entry-title {
+    line-height: 1.6em;
+}
+
+/* Remove text-trasnform uppercase from post headings */
+.single-post .site-content h1,
+.single-post .site-content h2,
+.single-post .site-content h3,
+.single-post .site-content h4,
+.single-post .site-content h5,
+.single-post .site-content h6 {
+    color: #000000;
+    line-height: 1.2em;
+    font-weight: 600;
+    letter-spacing: normal;
+    text-transform: none;
+    margin: 15px 0;
 }
