@@ -65,3 +65,13 @@ body {
     text-transform: none;
     margin: 15px 0;
 }
+
+/* Remove padding top form content-wrap */
+@media screen and (min-width: 992px) {
+    .home .content-wrap {
+        padding: 90px 0 30px;
+    }
+}
+.content-wrap {
+    padding: 0 0 30px;
+}

@@ -51,3 +51,43 @@ function zillah_ti_blog_theme_setup() {
 	load_child_theme_textdomain( 'zillah-ti-blog', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'zillah_ti_blog_theme_setup' );
+
+
+function ti_blog_before_navigation() {
+	if ( is_home() ) {
+		wp_nav_menu(
+			array(
+				'theme_location'  => 'social',
+				'menu_id'         => 'social-icons-menu',
+				'menu_class'      => 'social-navigation',
+				'link_before'     => '<span class="screen-reader-text">',
+				'link_after'      => '</span>',
+				'container_class' => 'header-social-icons',
+				'fallback_cb'     => false,
+			)
+		);
+	} else {
+		ti_blog_brand();
+	}
+}
+
+/**
+ * Return the site brand
+ *
+ * @since Zillah 1.0
+ */
+function ti_blog_brand() {
+
+	echo '<div class="header-logo-wrap">';
+
+	if ( function_exists( 'the_custom_logo' ) ) {
+		the_custom_logo();
+	} else {
+		$zillah_logo_old = get_theme_mod( 'zillah_logo_old', false );
+		echo '<a href="' . esc_url( home_url( '/' ) ) . '" class="custom-logo-link" rel="home" itemprop="url">';
+		echo '<img width="630" height="290" src="' . esc_url( $zillah_logo_old ) . '" class="custom-logo" alt="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" itemprop="logo">';
+		echo '</a>';
+	}
+
+	echo '</div>';
+}
