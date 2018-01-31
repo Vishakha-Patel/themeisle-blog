@@ -107,3 +107,18 @@ function zillah_ti_blog_category() {
 		);
 	}
 }
+
+/**
+ * Change default font family on body/content
+ */
+function zillah_ti_blog_add_fonts() {
+
+	$output  = array(
+		'font_family' => 'PT Serif',
+		'type' => 'serif',
+		'subset' => '400',
+	);
+
+	return $output;
+}
+add_filter( 'zillah_extend_fonts_one', 'zillah_ti_blog_add_fonts' );
