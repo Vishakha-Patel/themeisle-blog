@@ -49,7 +49,7 @@
 							">
 
                             <?php
-                                ti_blog_before_navigation();
+                                zillah_ti_blog_before_navigation();
 							?>
 
 							<nav id="site-navigation" class="main-navigation" role="navigation">

@@ -53,7 +53,7 @@ function zillah_ti_blog_theme_setup() {
 add_action( 'after_setup_theme', 'zillah_ti_blog_theme_setup' );
 
 
-function ti_blog_before_navigation() {
+function zillah_ti_blog_before_navigation() {
 	if ( is_home() ) {
 		wp_nav_menu(
 			array(
@@ -67,7 +67,7 @@ function ti_blog_before_navigation() {
 			)
 		);
 	} else {
-		ti_blog_brand();
+		zillah_ti_blog_brand();
 	}
 }
 
@@ -76,7 +76,7 @@ function ti_blog_before_navigation() {
  *
  * @since Zillah 1.0
  */
-function ti_blog_brand() {
+function zillah_ti_blog_brand() {
 
 	echo '<div class="header-logo-wrap">';
 
@@ -90,4 +90,20 @@ function ti_blog_brand() {
 	}
 
 	echo '</div>';
+}
+
+/**
+ * Prints HTML with meta information for the category.
+ */
+function zillah_ti_blog_category() {
+
+	$categories_list = get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'zillah' ) );
+	if ( $categories_list ) {
+		printf(
+			'<span class="cat-links"><span class="screen-reader-text">%1$s </span><span class="posted-in">%2$s</span> %3$s</span>',
+			_x( 'Categories', 'Used before category names.', 'zillah' ),
+			_x( 'Posted in:', 'Used before category names.', 'zillah-ti-blog' ),
+			$categories_list
+		);
+	}
 }

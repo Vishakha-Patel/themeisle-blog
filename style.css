@@ -52,12 +52,12 @@ body {
 }
 
 /* Remove text-trasnform uppercase from post headings */
-.single-post .site-content h1,
-.single-post .site-content h2,
-.single-post .site-content h3,
-.single-post .site-content h4,
-.single-post .site-content h5,
-.single-post .site-content h6 {
+.single-post .entry-content h1,
+.single-post .entry-content h2,
+.single-post .entry-content h3,
+.single-post .entry-content h4,
+.single-post .entry-content h5,
+.single-post .entry-content h6 {
     color: #000000;
     line-height: 1.2em;
     font-weight: 600;
@@ -75,3 +75,30 @@ body {
 .content-wrap {
     padding: 0 0 30px;
 }
+
+/* Change meta data layout */
+.single-post .posted-on {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.single-post .cat-links {
+    display: inline-block;
+}
+
+.single-post .cat-links {
+    margin-right: 30px;
+}
+
+.single-post .cat-links .posted-in {
+    text-transform: none;
+}
+
+/* Style number of comments of post */
+.single-post .entry-header .number-of-comments a {
+    color: #aaaaaa;
+}
+.single-post .entry-header .number-of-comments:hover a {
+    color: #575756;
+}
+
