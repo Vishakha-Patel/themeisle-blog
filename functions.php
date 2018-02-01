@@ -111,14 +111,18 @@ function zillah_ti_blog_category() {
 /**
  * Change default font family on body/content
  */
-function zillah_ti_blog_add_fonts() {
+function zillah_ti_blog_add_fonts( $input_array ) {
 
-	$output  = array(
+
+	$new_font  = array(
 		'font_family' => 'PT Serif',
 		'type' => 'serif',
 		'subset' => '400',
 	);
 
-	return $output;
+	array_push( $input_array , $new_font );
+
+	return $input_array;
+
 }
-add_filter( 'zillah_extend_fonts_one', 'zillah_ti_blog_add_fonts' );
+add_filter( 'zillah_filter_body_fonts', 'zillah_ti_blog_add_fonts' );
