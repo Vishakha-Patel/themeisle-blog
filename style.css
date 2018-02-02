@@ -38,12 +38,13 @@ body {
     color: #333333;
 }
 
-.single-post .site-content {
+.single-post .site-content, .page .site-content {
     background-color: #ffffff;
 }
 
 /* Change container for content width to 770px */
 @media screen and (min-width: 992px ) {
+    .page .content-inner-wrap,
     .single-post .content-inner-wrap {
         max-width: 770px;
     }
@@ -56,15 +57,22 @@ body {
 }
 
 /* Change post title line-height */
+.page h1.entry-title,
 .single-post h1.entry-title {
     line-height: 1.6em;
 }
 
-.content-area-arch .entry-content .content-inner-wrap, .single-post .entry-content {
+.content-area-arch .entry-content .content-inner-wrap, .single-post .entry-content, .page .entry-content {
     font-size: 1.3em;
 }
 
 /* Remove text-trasnform uppercase from post headings */
+.page .entry-content h1,
+.page .entry-content h2,
+.page .entry-content h3,
+.page .entry-content h4,
+.page .entry-content h5,
+.page .entry-content h6
 .single-post .entry-content h1,
 .single-post .entry-content h2,
 .single-post .entry-content h3,
