@@ -26,7 +26,7 @@
 			zillah_posted_date();
 			zillah_ti_blog_category();
 			?>
-            <span class="number-of-comments"><a href="#comments"><?php comments_number(); ?></a></span>
+            <span class="number-of-comments"><a href="#disqus_thread"><?php echo zillah_ti_blog_comments(); ?></a></span>
 		</div>
 	</header><!-- .entry-header -->
 
