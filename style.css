@@ -109,7 +109,7 @@ body {
     display: inline-block;
     margin-right: 30px;
     font-size: 16px;
-    font-family: "PT Serif", Arial, "Times New Roman", "Bitstream Charter", Times, serif;
+    font-family: 'PT Serif', serif;
     letter-spacing: normal;
     text-transform: none;
     color: #aaa;
