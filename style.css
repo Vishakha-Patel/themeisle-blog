@@ -12,10 +12,14 @@ Template:       zillah
 
 /* Make the image width same as the content width */
 p {
-    margin-bottom: 1.7em    ;
+    margin-bottom: 1.7em;
 }
 ul, ol {
     margin-bottom: 2em;
+}
+table thead,
+table tbody {
+    font-size: 18px;
 }
 .blog .post-thumbnail-wrap {
     max-width: 840px;
