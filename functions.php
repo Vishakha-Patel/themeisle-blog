@@ -6,7 +6,7 @@
  * @since 1.0.0
  */
 
-define( 'ZILLAH_TI_BLOG_VERSION', '1.0.1' );
+define( 'ZILLAH_TI_BLOG_VERSION', '1.0.2' );
 
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -20,10 +20,11 @@ if ( ! function_exists( 'zillah_ti_blog_parent_css' ) ) :
 	 * @since 1.0.0
 	 */
 	function zillah_ti_blog_parent_css() {
-		wp_enqueue_style( 'zillah_ti_blog_parent', trailingslashit( get_template_directory_uri() ) . 'style.css', array( 'bootstrap-css' ) );
+		wp_enqueue_style( 'zillah_ti_blog_parent', trailingslashit( get_template_directory_uri() ) . 'style.css', array( 'bootstrap-css' ), ZILLAH_TI_BLOG_VERSION );
 		if ( is_rtl() ) {
 			wp_enqueue_style( 'zillah_ti_blog_parent_rtl', trailingslashit( get_template_directory_uri() ) . 'style-rtl.css', array( 'bootstrap-css' ) );
 		}
+		wp_register_style( 'zillah-style', get_stylesheet_uri(), array(), ZILLAH_TI_BLOG_VERSION );
 	}
 endif;
 add_action( 'wp_enqueue_scripts', 'zillah_ti_blog_parent_css', 10 );

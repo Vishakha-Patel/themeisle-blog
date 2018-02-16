@@ -3,7 +3,7 @@ Theme Name:     Zillah TI Blog
 Author:         ThemeIsle
 Author URI:     https://themeisle.com
 Description:    Child theme of Zillah theme for Themeisle Blog
-Version:        1.0.1
+Version:        1.0.2
 License:        GNU General Public License v2 or later
 License URI:    http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:    zillah-ti-blog
@@ -12,69 +12,69 @@ Template:       zillah
 
 /* Make the image width same as the content width */
 p {
-    margin-bottom: 1.7em;
+	margin-bottom: 1.7em;
 }
 ul, ol {
-    margin-bottom: 2em;
+	margin-bottom: 1.5em;
 }
 table thead,
 table tbody {
-    font-size: 18px;
+	font-size: 18px;
 }
 .blog .post-thumbnail-wrap {
-    max-width: 840px;
-    margin: 0 auto 50px;
-    padding: 0 20px;
+	max-width: 840px;
+	margin: 0 auto 50px;
+	padding: 0 20px;
 }
 .blog .more-link {
-    font-weight: 600;
-    font-size: 15px;
+	font-weight: 600;
+	font-size: 15px;
 }
 .main-navigation-wrap .header-logo-wrap img {
-    max-height: 24px;
+	max-height: 24px;
 }
 
 /* Add antialiasing to body text */
 body {
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 /* Single Post Page */
 
 /* Change bakcground-color to white */
 .site-content {
-    color: rgba(0,0,0,.84);
+	color: rgba(0,0,0,.84);
 }
 
 .single-post .site-content, .page .site-content {
-    background-color: #ffffff;
+	background-color: #ffffff;
 }
 
 /* Change container for content width to 770px */
 @media screen and (min-width: 992px ) {
-    .page .content-inner-wrap,
-    .single-post .content-inner-wrap {
-        max-width: 770px;
-    }
+	.page .content-inner-wrap,
+	.single-post .content-inner-wrap {
+		max-width: 770px;
+	}
 }
 
 /* Make the feature image smaller, similar to content in width  */
 .single-post  .post-thumbnail-wrap {
-    max-width: 770px;
-    margin: 0 auto 50px;
+	max-width: 770px;
+	margin: 0 auto 50px;
 }
 
 /* Change post title line-height */
 .page h1.entry-title,
 .single-post h1.entry-title {
-    line-height: 1.6em;
+	line-height: 1.6em;
 }
 
 .content-area-arch .entry-content .content-inner-wrap, .single-post .entry-content, .page .entry-content {
-    font-size: 1.3em;
-    line-height: 1.58em;
+	font-size: 1.3em;
+	line-height: 1.58em;
 }
 
 /* Remove text-trasnform uppercase from post headings */
@@ -90,54 +90,67 @@ body {
 .single-post .entry-content h4,
 .single-post .entry-content h5,
 .single-post .entry-content h6 {
-    color: rgba(0,0,0,.84);
-    line-height: 1.3;
-    font-weight: 400;
-    letter-spacing: normal;
-    text-transform: none;
-    margin: 15px 0;
+	color: rgba(0,0,0,.84);
+	line-height: 1.3;
+	font-weight: 400;
+	letter-spacing: normal;
+	text-transform: none;
+	margin: 15px 0;
 }
 
 /* Remove padding top form content-wrap */
 @media screen and (min-width: 992px) {
-    .home .content-wrap {
-        padding: 90px 0 30px;
-    }
+	.home .content-wrap {
+		padding: 90px 0 30px;
+	}
 }
 .content-wrap {
-    padding: 0 0 30px;
+	padding: 0 0 30px;
 }
 
 /* Change meta data layout */
 .single-post .entry-header .cat-links, .single-post .posted-on {
-    display: inline-block;
-    margin-right: 30px;
-    font-size: 16px;
-    font-family: 'PT Serif', serif;
-    letter-spacing: normal;
-    text-transform: none;
-    color: #aaa;
+	display: inline-block;
+	margin-right: 30px;
+	font-size: 16px;
+	font-family: 'PT Serif', serif;
+	letter-spacing: normal;
+	text-transform: none;
+	color: #aaa;
 }
 
 .single-post .cat-links a:hover {
-    color: #575756;
+	color: #575756;
 }
 .single-post .cat-links a {
-     color: #aaa;
+	 color: #aaa;
  }
 
 .single-post .cat-links .posted-in {
-    text-transform: none;
+	text-transform: none;
 }
 
 .single-post .entry-header {
-    padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 /* Style number of comments of post */
 .single-post .entry-header .number-of-comments a {
-    color: #aaaaaa;
+	color: #aaaaaa;
 }
 .single-post .entry-header .number-of-comments:hover a {
-    color: #575756;
+	color: #575756;
+}
+
+@media screen and ( max-width: 768px ) {
+	.content-area-arch .entry-content .content-inner-wrap, .single-post .entry-content, .page .entry-content {
+		font-size: 18px;
+	}
+	p {
+		margin-bottom: 21px;
+	}
+	ul, ol {
+		margin-bottom: 1.5em;
+		padding: 0 0 0 25px;
+	}
 }
