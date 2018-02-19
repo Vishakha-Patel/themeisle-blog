@@ -6,7 +6,7 @@
  * @since 1.0.0
  */
 
-define( 'ZILLAH_TI_BLOG_VERSION', '1.0.2' );
+define( 'ZILLAH_TI_BLOG_VERSION', '1.0.3' );
 
 
 if ( ! defined( 'ABSPATH' ) ) {
