@@ -153,4 +153,10 @@ body {
 		margin-bottom: 1.5em;
 		padding: 0 0 0 25px;
 	}
+	.single-post .entry-header .cat-links, .single-post .number-of-comments {
+		display: none;
+	}
+	.single-post .posted-on {
+		margin: 0;
+	}
 }
