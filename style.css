@@ -144,7 +144,7 @@ body {
 
 @media screen and ( max-width: 768px ) {
 	.content-area-arch .entry-content .content-inner-wrap, .single-post .entry-content, .page .entry-content {
-		font-size: 18px;
+		font-size: 17px;
 	}
 	p {
 		margin-bottom: 21px;
